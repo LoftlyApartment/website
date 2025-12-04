@@ -49,6 +49,10 @@ supabase/.temp/
 
 # Logs
 *.log
+
 # Ignore ImageCompressor files
 components/ui/ImageCompressor.tsx
 components/ui/ImageCompressor.example.tsx
+
+# Documentation (internal only)
+/docs/
