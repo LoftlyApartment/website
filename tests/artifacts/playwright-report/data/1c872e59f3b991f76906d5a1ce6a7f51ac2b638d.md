@@ -1,0 +1,203 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e5]:
+        - link "Loftly Apartment GmbH" [ref=e6] [cursor=pointer]:
+          - /url: /en
+          - text: Loftly Apartment
+        - navigation "Main navigation" [ref=e7]:
+          - link "Home" [ref=e8] [cursor=pointer]:
+            - /url: /en
+          - link "Properties" [ref=e9] [cursor=pointer]:
+            - /url: /en/properties
+          - link "About" [ref=e10] [cursor=pointer]:
+            - /url: /en/about
+          - link "Contact" [ref=e11] [cursor=pointer]:
+            - /url: /en/contact
+          - link "FAQ" [ref=e12] [cursor=pointer]:
+            - /url: /en/faq
+        - generic [ref=e13]:
+          - button "Switch to German" [ref=e14] [cursor=pointer]:
+            - img [ref=e15]
+            - generic [ref=e18]: DE
+          - link "Book Now" [ref=e19] [cursor=pointer]:
+            - /url: /en/booking
+            - button "Book Now" [ref=e20]
+    - main [ref=e21]:
+      - main [ref=e22]:
+        - generic [ref=e23]:
+          - generic [ref=e24]:
+            - heading "Our Premium Apartments" [level=1] [ref=e25]
+            - paragraph [ref=e26]: Discover carefully curated spaces designed for your comfort and convenience in Berlin's best neighborhoods
+          - generic [ref=e28]:
+            - generic [ref=e29]:
+              - generic [ref=e30]: Price Range
+              - combobox [ref=e31]:
+                - option "Any Price" [selected]
+                - option "€0 - €100"
+                - option "€100 - €150"
+                - option "€150+"
+            - generic [ref=e32]:
+              - generic [ref=e33]: Guests
+              - combobox [ref=e34]:
+                - option "Any Guests" [selected]
+                - option "1-2 guests"
+                - option "3-4 guests"
+                - option "5+ guests"
+            - generic [ref=e35]:
+              - generic [ref=e36]: Amenities
+              - combobox [ref=e37]:
+                - option "All Amenities" [selected]
+                - option "Workspace"
+                - option "Pet-Friendly"
+                - option "Parking"
+            - button "Apply Filters" [ref=e39] [cursor=pointer]
+          - generic [ref=e40]:
+            - generic [ref=e41] [cursor=pointer]:
+              - generic [ref=e44]:
+                - img [ref=e45]
+                - generic [ref=e48]: Kantstrasse 99, 10627 Berlin
+              - generic [ref=e49]:
+                - heading "Kantstrasse Apartment" [level=3] [ref=e50]
+                - generic [ref=e51]:
+                  - generic [ref=e52]: 90m²
+                  - generic [ref=e53]: 5 Guests
+                - generic [ref=e54]:
+                  - generic [ref=e55]:
+                    - img [ref=e56]
+                    - generic [ref=e60]: Free WiFi
+                  - generic [ref=e61]:
+                    - img [ref=e62]
+                    - generic [ref=e64]: 90m²
+                  - generic [ref=e65]:
+                    - img [ref=e66]
+                    - generic [ref=e71]: 5 Guests
+                - generic [ref=e72]:
+                  - generic [ref=e73]: €120
+                  - generic [ref=e74]: / per night
+              - link "View Details" [ref=e76]:
+                - /url: /properties/kantstrasse
+                - button "View Details" [ref=e77]
+            - generic [ref=e78] [cursor=pointer]:
+              - generic [ref=e81]:
+                - img [ref=e82]
+                - generic [ref=e85]: Hindenburgdamm 85, 12203 Berlin
+              - generic [ref=e86]:
+                - heading "Hindenburgdamm Apartment" [level=3] [ref=e87]
+                - generic [ref=e88]:
+                  - generic [ref=e89]: 75m²
+                  - generic [ref=e90]: 4 Guests
+                  - generic [ref=e91]: Pet-Friendly
+                - generic [ref=e92]:
+                  - generic [ref=e93]:
+                    - img [ref=e94]
+                    - generic [ref=e98]: Free WiFi
+                  - generic [ref=e99]:
+                    - img [ref=e100]
+                    - generic [ref=e102]: 75m²
+                  - generic [ref=e103]:
+                    - img [ref=e104]
+                    - generic [ref=e109]: 4 Guests
+                  - generic [ref=e110]:
+                    - img [ref=e111]
+                    - generic [ref=e116]: Pet-Friendly
+                - generic [ref=e117]:
+                  - generic [ref=e118]: €95
+                  - generic [ref=e119]: / per night
+              - link "View Details" [ref=e121]:
+                - /url: /properties/hindenburgdamm
+                - button "View Details" [ref=e122]
+    - contentinfo [ref=e123]:
+      - generic [ref=e124]:
+        - generic [ref=e125]:
+          - generic [ref=e126]:
+            - heading "Loftly Apartment GmbH" [level=3] [ref=e127]
+            - paragraph [ref=e128]: Premium Apartments in Berlin
+            - generic [ref=e129]:
+              - link "Facebook" [ref=e130] [cursor=pointer]:
+                - /url: https://facebook.com
+                - img [ref=e131]
+              - link "Instagram" [ref=e133] [cursor=pointer]:
+                - /url: https://instagram.com
+                - img [ref=e134]
+              - link "LinkedIn" [ref=e136] [cursor=pointer]:
+                - /url: https://linkedin.com
+                - img [ref=e137]
+          - generic [ref=e139]:
+            - heading "Quick Links" [level=4] [ref=e140]
+            - list [ref=e141]:
+              - listitem [ref=e142]:
+                - link "Properties" [ref=e143] [cursor=pointer]:
+                  - /url: /en/properties
+              - listitem [ref=e144]:
+                - link "About" [ref=e145] [cursor=pointer]:
+                  - /url: /en/about
+              - listitem [ref=e146]:
+                - link "FAQ" [ref=e147] [cursor=pointer]:
+                  - /url: /en/faq
+              - listitem [ref=e148]:
+                - link "Blog" [ref=e149] [cursor=pointer]:
+                  - /url: /en/blog
+              - listitem [ref=e150]:
+                - link "Contact" [ref=e151] [cursor=pointer]:
+                  - /url: /en/contact
+          - generic [ref=e152]:
+            - heading "Legal" [level=4] [ref=e153]
+            - list [ref=e154]:
+              - listitem [ref=e155]:
+                - link "Imprint" [ref=e156] [cursor=pointer]:
+                  - /url: /en/impressum
+              - listitem [ref=e157]:
+                - link "Privacy Policy" [ref=e158] [cursor=pointer]:
+                  - /url: /en/privacy
+              - listitem [ref=e159]:
+                - link "Terms & Conditions" [ref=e160] [cursor=pointer]:
+                  - /url: /en/terms
+              - listitem [ref=e161]:
+                - link "Cancellation Policy" [ref=e162] [cursor=pointer]:
+                  - /url: /en/cancellation
+              - listitem [ref=e163]:
+                - link "Cookie Policy" [ref=e164] [cursor=pointer]:
+                  - /url: /en/cookies
+          - generic [ref=e165]:
+            - heading "Contact" [level=4] [ref=e166]
+            - list [ref=e167]:
+              - listitem [ref=e168]:
+                - img [ref=e169]
+                - generic [ref=e172]:
+                  - text: Lübecker Straße 49
+                  - text: 10559 Berlin
+              - listitem [ref=e173]:
+                - link "info@loftlyapartment.de" [ref=e174] [cursor=pointer]:
+                  - /url: mailto:info@loftlyapartment.de
+                  - img [ref=e175]
+                  - generic [ref=e178]: info@loftlyapartment.de
+              - listitem [ref=e179]:
+                - link "+49 163 3595589" [ref=e180] [cursor=pointer]:
+                  - /url: tel:+491633595589
+                  - img [ref=e181]
+                  - generic [ref=e183]: +49 163 3595589
+              - listitem [ref=e184]: "Trade Register: HRB274913B"
+        - generic [ref=e186]:
+          - paragraph [ref=e187]: © 2025 Loftly Apartment GmbH. All rights reserved
+          - paragraph [ref=e188]: "Representatives: Kerim Ay, Fabian Streckfuß"
+  - button "Open Next.js Dev Tools" [ref=e194] [cursor=pointer]:
+    - img [ref=e195]
+  - alert [ref=e198]
+  - dialog "Cookie Settings" [ref=e199]:
+    - generic [ref=e204]:
+      - img [ref=e207]
+      - generic [ref=e214]:
+        - heading "Cookie Settings" [level=2] [ref=e215]
+        - paragraph [ref=e216]:
+          - text: We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic. By clicking 'Accept All', you consent to our use of cookies.
+          - link "Learn more" [ref=e217] [cursor=pointer]:
+            - /url: /cookie-policy
+      - generic [ref=e218]:
+        - button "Accept All" [ref=e219] [cursor=pointer]
+        - button "Reject Non-Essential" [ref=e220] [cursor=pointer]
+        - button "Customize" [ref=e221] [cursor=pointer]
+```

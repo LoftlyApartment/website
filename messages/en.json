@@ -1,0 +1,786 @@
+{
+  "common": {
+    "appName": "Loftly Apartment GmbH",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "success": "Success",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "view": "View",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort",
+    "more": "More",
+    "less": "Less"
+  },
+  "nav": {
+    "home": "Home",
+    "properties": "Properties",
+    "about": "About",
+    "contact": "Contact",
+    "faq": "FAQ",
+    "blog": "Blog",
+    "login": "Sign In",
+    "logout": "Sign Out",
+    "dashboard": "Dashboard"
+  },
+  "hero": {
+    "title": "Your Home Away From Home",
+    "subtitle": "Discover our exclusive apartments for your perfect stay",
+    "cta": "Book Now"
+  },
+  "home": {
+    "hero": {
+      "title": "Premium Apartments in the Heart of Berlin",
+      "subtitle": "Experience luxury living in Berlin's finest neighborhoods",
+      "cta": "Book Now",
+      "viewProperties": "View Properties",
+      "scrollDown": "Scroll to explore"
+    },
+    "search": {
+      "location": "Location",
+      "checkIn": "Check-in",
+      "checkOut": "Check-out",
+      "guestsLabel": "Guests",
+      "guest": "Guest",
+      "guests": "Guests",
+      "search": "Search",
+      "allProperties": "All Properties"
+    },
+    "properties": {
+      "title": "Our Premium Apartments",
+      "subtitle": "Carefully curated spaces designed for your comfort and convenience",
+      "kant": {
+        "name": "Kantstrasse Apartment",
+        "address": "Kantstrasse 99, 10627 Berlin",
+        "size": "90m²",
+        "guests": "5 Guests",
+        "price": "€120",
+        "workspace": "Workspace"
+      },
+      "hinden": {
+        "name": "Hindenburgdamm Apartment",
+        "address": "Hindenburgdamm 85, 12203 Berlin",
+        "size": "45m²",
+        "guests": "4 Guests",
+        "price": "€95",
+        "petFriendly": "Pet-Friendly"
+      },
+      "kotti": {
+        "name": "Kottbusser Damm Apartment",
+        "address": "Kottbusser Damm 68, 10967 Berlin",
+        "size": "55m²",
+        "guests": "7 Guests",
+        "price": "€140",
+        "petFriendly": "Pet-Friendly",
+        "garden": "Private Garden"
+      },
+      "features": {
+        "wifi": "Free WiFi",
+        "kitchen": "Full Kitchen",
+        "washer": "Washer"
+      },
+      "perNight": "per night",
+      "viewDetails": "View Details",
+      "viewAll": "View All Properties"
+    },
+    "audience": {
+      "title": "Perfect For",
+      "subtitle": "Our apartments are designed to meet the needs of diverse travelers",
+      "business": {
+        "title": "Business Travelers",
+        "description": "Professional accommodations with dedicated workspace and high-speed WiFi for your business needs"
+      },
+      "families": {
+        "title": "Families",
+        "description": "Spacious apartments with full kitchen and comfortable living areas, perfect for family stays"
+      },
+      "hospital": {
+        "title": "Hospital Visitors",
+        "description": "Close proximity to major hospitals with easy access and pet-friendly options for your convenience"
+      }
+    },
+    "why": {
+      "title": "Why Loftly Apartment?",
+      "subtitle": "Discover what makes us the preferred choice for discerning travelers",
+      "location": {
+        "title": "Prime Locations",
+        "description": "Situated in Berlin's best neighborhoods with excellent transport connections"
+      },
+      "professional": {
+        "title": "Professional Management",
+        "description": "Licensed and insured property management you can trust"
+      },
+      "support": {
+        "title": "24/7 Support",
+        "description": "Round-the-clock assistance whenever you need us"
+      },
+      "direct": {
+        "title": "Direct Booking",
+        "description": "Best rates guaranteed with no platform fees"
+      }
+    },
+    "berlin": {
+      "title": "Discover Berlin",
+      "description": "Berlin is a city of endless possibilities, rich history, and vibrant culture. Our apartments place you at the heart of it all, with easy access to the city's best attractions.",
+      "highlight1": "Minutes away from iconic landmarks like Brandenburg Gate and Museum Island",
+      "highlight2": "Excellent public transport connections to all parts of the city",
+      "highlight3": "Surrounded by world-class restaurants, cafes, and entertainment",
+      "cta": "Explore Our Locations"
+    },
+    "newsletter": {
+      "title": "Stay Updated",
+      "description": "Subscribe to our newsletter for exclusive offers, Berlin tips, and updates",
+      "placeholder": "Enter your email",
+      "button": "Subscribe",
+      "success": "Thank you for subscribing!",
+      "privacy": "We respect your privacy. Unsubscribe anytime."
+    },
+    "trust": {
+      "licensed": "Licensed & Insured",
+      "gdpr": "GDPR Compliant",
+      "secure": "Secure Payments",
+      "reviews": "5-Star Reviews"
+    }
+  },
+  "booking": {
+    "title": "Book Your Stay",
+    "checkIn": "Check-in",
+    "checkOut": "Check-out",
+    "guests": "Guests",
+    "submit": "Check Availability",
+    "total": "Total",
+    "perNight": "per night",
+    "back": "Back",
+    "continue": "Continue",
+    "progress": {
+      "step": "Step",
+      "of": "of",
+      "propertyDates": "Property & Dates",
+      "guestInfo": "Guest Information",
+      "pricing": "Pricing Review",
+      "payment": "Payment",
+      "confirmation": "Confirmation"
+    },
+    "step1": {
+      "selectProperty": "Select Property",
+      "selectDates": "Select Dates",
+      "selectGuests": "Select Guests",
+      "specialRequests": "Special Requests",
+      "maxGuests": "Max Guests",
+      "petFriendly": "Pet-Friendly",
+      "checkIn": "Check-in Date",
+      "checkOut": "Check-out Date",
+      "minStay": "Minimum stay: 3 nights",
+      "adults": "Adults",
+      "adultsDesc": "Ages 13 or above",
+      "children": "Children",
+      "childrenDesc": "Ages 2-12",
+      "infants": "Infants",
+      "infantsDesc": "Under 2",
+      "guestWarning": "This property has a maximum of {max} guests",
+      "earlyCheckIn": "Early check-in (subject to availability)",
+      "lateCheckout": "Late checkout (subject to availability)",
+      "airportPickup": "Airport pickup service",
+      "pet": "Bringing a pet",
+      "perNight": "per night",
+      "continue": "Continue",
+      "errors": {
+        "minStay": "Minimum stay 3 nights required"
+      }
+    },
+    "step2": {
+      "personalInfo": "Personal Information",
+      "stayDetails": "Stay Details",
+      "consent": "Terms & Privacy",
+      "firstName": "First Name",
+      "firstNamePlaceholder": "John",
+      "lastName": "Last Name",
+      "lastNamePlaceholder": "Doe",
+      "email": "Email Address",
+      "emailPlaceholder": "john.doe@example.com",
+      "phone": "Phone Number",
+      "phonePlaceholder": "+49 123 456789",
+      "country": "Country",
+      "countryPlaceholder": "Select your country",
+      "company": "Company Name",
+      "companyPlaceholder": "Your company (optional)",
+      "purposeOfStay": "Purpose of Stay",
+      "purposePlaceholder": "Select purpose",
+      "purpose": {
+        "business": "Business",
+        "leisure": "Leisure",
+        "hospital": "Hospital Visit",
+        "other": "Other"
+      },
+      "specialRequestsLabel": "Special Requests",
+      "specialRequestsPlaceholder": "Any special requests or needs?",
+      "optional": "Optional",
+      "agreeToTerms": "I agree to the",
+      "termsLink": "Terms & Conditions",
+      "agreeToPrivacy": "I agree to the",
+      "privacyLink": "Privacy Policy",
+      "receiveUpdates": "I want to receive updates and special offers"
+    },
+    "step3": {
+      "bookingSummary": "Booking Summary",
+      "pricingDetails": "Pricing Details",
+      "importantInfo": "Important Information",
+      "property": "Property",
+      "night": "night",
+      "nights": "nights",
+      "adult": "adult",
+      "adults": "adults",
+      "child": "child",
+      "children": "children",
+      "infant": "infant",
+      "infants": "infants",
+      "guests": "Guests",
+      "guestDetails": "Guest Details",
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "discount": "Discount",
+      "cleaningFee": "Cleaning Fee",
+      "petFee": "Pet Fee",
+      "subtotal": "Subtotal",
+      "vat": "VAT",
+      "total": "Total",
+      "securityDeposit": "Security Deposit",
+      "securityDepositNote": "A refundable security deposit of €300 will be held (not charged) and returned within 7 days after checkout.",
+      "cancellationPolicy": "Cancellation Policy",
+      "cancellationSummary": "Free cancellation up to 14 days before check-in.",
+      "paymentTerms": "Payment Terms",
+      "paymentTermsSummary": "Full payment is required at the time of booking.",
+      "houseRules": "House Rules",
+      "houseRulesSummary": "Please review our house rules before booking.",
+      "readMore": "Read more",
+      "viewRules": "View rules",
+      "continueToPayment": "Continue to Payment",
+      "errorNoPricing": "Unable to calculate pricing. Please go back and check your booking details."
+    },
+    "step4": {
+      "paymentMethod": "Payment Method",
+      "paymentSummary": "Payment Summary",
+      "cardDetails": "Card Details",
+      "sepaDetails": "SEPA Direct Debit",
+      "billingAddress": "Billing Address",
+      "creditDebitCard": "Credit/Debit Card",
+      "cardDescription": "Pay securely with your credit or debit card",
+      "sepaDebit": "SEPA Direct Debit",
+      "sepaDescription": "Coming soon",
+      "sepaComingSoon": "SEPA Direct Debit will be available soon. Please use credit/debit card for now.",
+      "cardholderName": "Cardholder Name",
+      "cardholderPlaceholder": "Name on card",
+      "cardNumber": "Card Number",
+      "expiryDate": "Expiry Date",
+      "cvc": "CVC",
+      "stripeNotice": "This is a placeholder payment form. Real Stripe integration coming soon.",
+      "sameAsGuest": "Same as guest address",
+      "address": "Address",
+      "addressPlaceholder": "Street address",
+      "city": "City",
+      "cityPlaceholder": "City",
+      "postalCode": "Postal Code",
+      "postalCodePlaceholder": "12345",
+      "country": "Country",
+      "countryPlaceholder": "Select country",
+      "sslEncrypted": "SSL Encrypted",
+      "pciCompliant": "PCI-DSS Compliant",
+      "accommodation": "Accommodation",
+      "discount": "Discount",
+      "cleaningFee": "Cleaning Fee",
+      "petFee": "Pet Fee",
+      "vat": "VAT",
+      "total": "Total",
+      "processing": "Processing...",
+      "completeBooking": "Complete Booking"
+    },
+    "step5": {
+      "title": "Booking Confirmed!",
+      "subtitle": "Thank you for your booking",
+      "bookingReference": "Booking Reference",
+      "bookingDetails": "Booking Details",
+      "propertyAddress": "Kantstrasse 99, 10627 Berlin",
+      "checkIn": "Check-in",
+      "checkInTime": "3:00 PM - 11:00 PM",
+      "checkOut": "Check-out",
+      "checkOutTime": "11:00 AM",
+      "guests": "Guests",
+      "adult": "adult",
+      "adults": "adults",
+      "child": "child",
+      "children": "children",
+      "infant": "infant",
+      "infants": "infants",
+      "totalPaid": "Total Paid",
+      "nextSteps": "Next Steps",
+      "step1Title": "Check your email",
+      "step1Desc": "We've sent a confirmation email with all the details and check-in instructions.",
+      "step2Title": "Self check-in",
+      "step2Desc": "You'll receive access codes 24 hours before arrival for easy self check-in.",
+      "step3Title": "Contact us anytime",
+      "step3Desc": "Our 24/7 support team is here to help if you have any questions.",
+      "step4Title": "House rules",
+      "step4Desc": "Please familiarize yourself with our house rules for a smooth stay.",
+      "emailSent": "A confirmation email has been sent to",
+      "bookAnother": "Book Another Property",
+      "returnHome": "Return to Homepage",
+      "errorNoBooking": "No booking details found. Please start a new booking."
+    }
+  },
+  "footer": {
+    "about": "About Loftly",
+    "contact": "Contact",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions",
+    "imprint": "Imprint",
+    "company": {
+      "tagline": "Premium Apartments in Berlin",
+      "tradeRegister": "Trade Register",
+      "representatives": "Representatives"
+    },
+    "sections": {
+      "quickLinks": "Quick Links",
+      "legal": "Legal",
+      "contact": "Contact"
+    },
+    "legal": {
+      "impressum": "Imprint",
+      "privacy": "Privacy Policy",
+      "terms": "Terms & Conditions",
+      "cancellation": "Cancellation Policy",
+      "cookies": "Cookie Policy"
+    },
+    "copyright": {
+      "rights": "All rights reserved"
+    }
+  },
+  "properties": {
+    "meta": {
+      "title": "Our Properties | Premium Apartments in Berlin",
+      "description": "Browse our selection of premium apartments in Berlin. Modern, fully-equipped spaces in prime locations."
+    },
+    "title": "Our Premium Apartments",
+    "subtitle": "Discover carefully curated spaces designed for your comfort and convenience in Berlin's best neighborhoods",
+    "filters": {
+      "priceRange": "Price Range",
+      "anyPrice": "Any Price",
+      "guests": "Guests",
+      "anyGuests": "Any Guests",
+      "guestsLabel": "guests",
+      "amenities": "Amenities",
+      "allAmenities": "All Amenities",
+      "workspace": "Workspace",
+      "petFriendly": "Pet-Friendly",
+      "parking": "Parking",
+      "apply": "Apply Filters"
+    },
+    "card": {
+      "guests": "Guests",
+      "petFriendly": "Pet-Friendly",
+      "wifi": "Free WiFi",
+      "perNight": "per night",
+      "viewDetails": "View Details"
+    }
+  },
+  "about": {
+    "meta": {
+      "title": "About Us | Loftly Apartment GmbH",
+      "description": "Learn about Loftly Apartment GmbH - your trusted partner for premium apartment rentals in Berlin. Licensed, professional property management."
+    },
+    "hero": {
+      "title": "About Loftly Apartment GmbH",
+      "subtitle": "Your trusted partner for premium apartment rentals in Berlin"
+    },
+    "story": {
+      "title": "Our Story",
+      "content": "Founded in Berlin, Loftly Apartment GmbH specializes in providing premium, professionally managed apartments for business travelers, families, and visitors to our beautiful city. We understand that finding the perfect accommodation is crucial for a successful stay, which is why we carefully curate and maintain our properties to the highest standards."
+    },
+    "values": {
+      "title": "Our Values",
+      "quality": {
+        "title": "Quality",
+        "description": "We maintain our apartments to the highest standards, ensuring every guest enjoys a comfortable and memorable stay."
+      },
+      "trust": {
+        "title": "Trust",
+        "description": "Licensed and insured property management you can rely on. We're committed to transparency and excellent service."
+      },
+      "location": {
+        "title": "Location",
+        "description": "Strategically located properties in Berlin's best neighborhoods with excellent transport connections."
+      }
+    },
+    "why": {
+      "title": "Why Choose Us",
+      "items": {
+        "professional": "Professional property management company",
+        "licensed": "Licensed and insured (HRB274913B)",
+        "direct": "Direct booking - best prices guaranteed",
+        "support": "24/7 guest support",
+        "petFriendly": "Pet-friendly options available",
+        "flexible": "Flexible check-in times",
+        "multilingual": "Multilingual support (German, English)"
+      }
+    },
+    "team": {
+      "title": "Our Team",
+      "representatives": "Representatives: Kerim Ay, Fabian Streckfuß",
+      "description": "Our experienced team is dedicated to ensuring your stay in Berlin is exceptional. From the initial booking to check-out, we're here to assist you every step of the way."
+    },
+    "cta": {
+      "title": "Ready to experience Berlin?",
+      "button": "Book Now"
+    }
+  },
+  "contact": {
+    "meta": {
+      "title": "Contact Us | Loftly Apartment GmbH",
+      "description": "Get in touch with Loftly Apartment GmbH. We're here to help with any questions about your stay in Berlin."
+    },
+    "hero": {
+      "title": "Get In Touch",
+      "subtitle": "We're here to help with any questions about your stay"
+    },
+    "info": {
+      "address": {
+        "title": "Office Address",
+        "line1": "Lübecker Straße 49",
+        "line2": "10559 Berlin, Germany"
+      },
+      "email": {
+        "title": "Email",
+        "address": "info@loftlyapartment.de",
+        "response": "Response within 24 hours"
+      },
+      "phone": {
+        "title": "Phone",
+        "number": "+49 163 3595589",
+        "hours": "Mon-Fri 9:00-18:00",
+        "emergency": "Available for emergencies 24/7"
+      }
+    },
+    "form": {
+      "title": "Send us a message",
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "nameRequired": "Name is required",
+      "email": "Email",
+      "emailPlaceholder": "your@email.com",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Please enter a valid email",
+      "phone": "Phone",
+      "phonePlaceholder": "+49 123 456789 (optional)",
+      "property": "Property Interest",
+      "propertyPlaceholder": "Select a property",
+      "propertyKant": "Kantstrasse Apartment",
+      "propertyHinden": "Hindenburgdamm Apartment",
+      "propertyKotti": "Kottbusser Damm Apartment",
+      "propertyGeneral": "General Inquiry",
+      "message": "Message",
+      "messagePlaceholder": "How can we help you?",
+      "messageRequired": "Message is required",
+      "messageMin": "Message must be at least 10 characters",
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "success": "Thank you! We'll get back to you soon.",
+      "error": "Something went wrong. Please try again."
+    },
+    "faqLink": {
+      "title": "Common questions?",
+      "link": "Check our FAQ"
+    },
+    "map": {
+      "title": "Our Location"
+    }
+  },
+  "faq": {
+    "meta": {
+      "title": "FAQ | Loftly Apartment GmbH",
+      "description": "Find answers to frequently asked questions about booking, amenities, check-in, and policies at Loftly Apartment GmbH."
+    },
+    "hero": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Find answers to common questions about your stay with us"
+    },
+    "booking": {
+      "title": "Booking & Reservations",
+      "q1": {
+        "question": "How do I book an apartment?",
+        "answer": "You can book directly through our website. Select your dates, choose your apartment, and complete the secure checkout process. You'll receive a confirmation email with all the details."
+      },
+      "q2": {
+        "question": "What payment methods do you accept?",
+        "answer": "We accept all major credit cards, debit cards, and bank transfers through our secure Stripe payment system. All transactions are encrypted and secure."
+      },
+      "q3": {
+        "question": "Can I modify or cancel my booking?",
+        "answer": "Yes, please refer to our cancellation policy. Modifications are subject to availability. Contact us as soon as possible if you need to make changes."
+      },
+      "q4": {
+        "question": "Is there a minimum stay requirement?",
+        "answer": "Yes, we require a minimum stay of 3 nights for our apartments. For longer stays, we offer attractive discounts."
+      }
+    },
+    "property": {
+      "title": "Property & Amenities",
+      "q1": {
+        "question": "What amenities are included?",
+        "answer": "All apartments include high-speed WiFi, fully equipped kitchen, washing machine, smart TV, bed linens, and towels. Each property may have additional amenities listed on its detail page."
+      },
+      "q2": {
+        "question": "Are the apartments pet-friendly?",
+        "answer": "Our Hindenburgdamm apartment is pet-friendly with a €20 cleaning fee. Please inform us in advance if you're bringing a pet. The Kantstrasse apartment does not allow pets."
+      },
+      "q3": {
+        "question": "Is parking available?",
+        "answer": "Free street parking is available near the Kantstrasse apartment. The Hindenburgdamm apartment has excellent public transport connections and street parking options."
+      }
+    },
+    "checkin": {
+      "title": "Check-in & Check-out",
+      "q1": {
+        "question": "What are the check-in and check-out times?",
+        "answer": "Check-in is from 3:00 PM to 11:00 PM. Check-out is at 11:00 AM. Early check-in or late check-out may be available upon request, subject to availability."
+      },
+      "q2": {
+        "question": "How do I access the apartment?",
+        "answer": "We use smart locks and lockboxes for self-check-in. You'll receive detailed instructions with access codes 24 hours before your arrival."
+      },
+      "q3": {
+        "question": "What if I arrive late?",
+        "answer": "Self-check-in allows flexible arrival times. You'll have access to detailed instructions for 24/7 entry. If you have any issues, our emergency support line is available."
+      }
+    },
+    "stay": {
+      "title": "During Your Stay",
+      "q1": {
+        "question": "Who do I contact if I have issues?",
+        "answer": "Contact us via phone (+49 163 3595589) or email (info@loftlyapartment.de). We provide 24/7 support for emergencies."
+      },
+      "q2": {
+        "question": "Is housekeeping included?",
+        "answer": "For stays longer than 7 days, we provide complimentary mid-stay cleaning. Additional cleaning services can be arranged for a fee."
+      },
+      "q3": {
+        "question": "Can I receive mail or packages?",
+        "answer": "Yes, we can arrange package delivery with advance notice. Please contact us with the delivery details before your stay."
+      }
+    },
+    "location": {
+      "title": "Location & Transport",
+      "q1": {
+        "question": "How do I get from the airport?",
+        "answer": "Both apartments are accessible via S-Bahn and U-Bahn from Berlin airports. Detailed directions will be provided in your confirmation email. Taxi or rideshare services are also available."
+      },
+      "q2": {
+        "question": "What's nearby?",
+        "answer": "Both locations offer restaurants, supermarkets, cafes, and excellent transport connections within walking distance. Each property page includes detailed neighborhood information."
+      }
+    },
+    "policies": {
+      "title": "Policies",
+      "q1": {
+        "question": "What is your cancellation policy?",
+        "answer": "Free cancellation up to 14 days before check-in. Cancellations within 14 days are subject to a fee. See our full terms and conditions for details."
+      },
+      "q2": {
+        "question": "Do you charge a security deposit?",
+        "answer": "Yes, a refundable security deposit of €300 is required. It will be returned within 7 days after checkout if there are no damages or issues."
+      },
+      "q3": {
+        "question": "Are guests allowed to smoke?",
+        "answer": "No, all our apartments are strictly non-smoking. Smoking is not permitted inside the apartments or on balconies. Violations will result in forfeiture of the security deposit."
+      }
+    }
+  },
+  "cookie": {
+    "banner": {
+      "title": "Cookie Settings",
+      "description": "We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic. By clicking 'Accept All', you consent to our use of cookies.",
+      "learnMore": "Learn more",
+      "acceptAll": "Accept All",
+      "rejectNonEssential": "Reject Non-Essential",
+      "customize": "Customize"
+    },
+    "preferences": {
+      "title": "Manage Cookie Preferences",
+      "savePreferences": "Save Preferences",
+      "acceptAll": "Accept All",
+      "viewPolicy": "View detailed cookie policy",
+      "essential": {
+        "title": "Essential Cookies",
+        "description": "These cookies are necessary for the website to function and cannot be disabled in our systems. They are usually set in response to actions made by you, such as setting your privacy preferences, logging in, or filling in forms.",
+        "alwaysActive": "Always Active"
+      },
+      "functional": {
+        "title": "Functional Cookies",
+        "description": "These cookies enable enhanced functionality and personalization, such as remembering your preferences and settings. They may be set by us or by third-party providers whose services we have added to our pages."
+      },
+      "analytics": {
+        "title": "Analytics Cookies",
+        "description": "These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. They help us understand which pages are most and least popular and see how visitors move around the site."
+      },
+      "marketing": {
+        "title": "Marketing Cookies",
+        "description": "These cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant ads on other sites. Note: We currently do not use marketing cookies."
+      }
+    }
+  },
+  "property": {
+    "gallery": {
+      "photos": "Photos",
+      "close": "Close",
+      "photoTour": "Photo Tour",
+      "kitchenette": "Kitchenette",
+      "bedroom1": "Bedroom 1",
+      "bedroom2": "Bedroom 2",
+      "livingroom": "Living Room",
+      "bathroom": "Bathroom",
+      "terrace": "Terrace",
+      "exterior": "Exterior",
+      "previous": "Previous image",
+      "next": "Next image"
+    },
+    "header": {
+      "reviews": "reviews",
+      "bookNow": "Book Now"
+    },
+    "info": {
+      "size": "Size",
+      "bedrooms": "Bedrooms",
+      "bathrooms": "Bathrooms",
+      "maxGuests": "Max Guests",
+      "checkIn": "Check-in",
+      "checkOut": "Check-out"
+    },
+    "description": {
+      "title": "About This Property"
+    },
+    "amenities": {
+      "title": "Amenities",
+      "items": {
+        "wifi": "High-Speed WiFi (100 Mbps)",
+        "workspace": "Dedicated Workspace",
+        "kitchen": "Fully Equipped Kitchen",
+        "washer": "Washing Machine",
+        "tv": "Smart TV",
+        "ac": "Air Conditioning",
+        "heating": "Heating",
+        "smoke_detector": "Smoke Detector",
+        "first_aid": "First Aid Kit",
+        "parking": "Free Parking",
+        "pet_friendly": "Pet-Friendly",
+        "near_hospital": "Near Hospital",
+        "public_transport": "Public Transport Nearby",
+        "dryer": "Dryer",
+        "garden": "Private Garden",
+        "dishwasher": "Dishwasher",
+        "ev_charger": "EV Charging Station"
+      }
+    },
+    "calendar": {
+      "title": "Availability",
+      "placeholder": "Calendar View Coming Soon",
+      "placeholderSubtext": "Contact us to check specific dates",
+      "infoText": "Minimum stay requirements apply. Contact us for availability and special rates.",
+      "loading": "Loading availability...",
+      "loadError": "Failed to load availability",
+      "retry": "Try again",
+      "previousMonth": "Previous month",
+      "nextMonth": "Next month",
+      "available": "Available",
+      "booked": "Booked",
+      "past": "Past"
+    },
+    "pricing": {
+      "title": "Pricing",
+      "perNight": "per night",
+      "cleaningFee": "Cleaning Fee",
+      "petFee": "Pet Cleaning Fee",
+      "minStay": "Minimum Stay",
+      "night": "night",
+      "nights": "nights",
+      "discountsTitle": "Discounts",
+      "weeklyDiscount": "Weekly Stay (7+ nights)",
+      "monthlyDiscount": "Monthly Stay (28+ nights)",
+      "vatNotice": "All prices include 19% German VAT. Rates may vary during holidays."
+    },
+    "location": {
+      "title": "Location",
+      "mapPlaceholder": "Interactive Map",
+      "nearbyTitle": "Nearby Attractions",
+      "transportTitle": "Public Transportation",
+      "transportDescription": "Excellent public transport connections. Bus and metro stops within walking distance. Easy access to all parts of Berlin."
+    },
+    "rules": {
+      "title": "House Rules",
+      "checkIn": "Check-in",
+      "checkOut": "Check-out",
+      "quietHours": "Quiet Hours",
+      "smoking": "Smoking",
+      "parties": "Parties/Events",
+      "pets": "Pets",
+      "allowed": "Allowed",
+      "notAllowed": "Not Allowed",
+      "petsAllowedWithFee": "Allowed (€{fee} cleaning fee)",
+      "petsAllowedFree": "Allowed",
+      "maxGuestsLabel": "Maximum Guests",
+      "guests": "guests"
+    },
+    "reviews": {
+      "title": "Guest Reviews",
+      "reviewsCount": "reviews",
+      "showMore": "Show More Reviews",
+      "more": "more"
+    },
+    "host": {
+      "name": "Loftly Apartment GmbH",
+      "subtitle": "Professional Property Management",
+      "responseTime": "Response Time",
+      "feature1": "24/7 Support Available",
+      "feature2": "Licensed & Insured",
+      "feature3": "Professional Management",
+      "contactButton": "Contact Host"
+    },
+    "booking": {
+      "perNight": "per night",
+      "priceSubtext": "Best rates guaranteed",
+      "checkIn": "Check-in",
+      "checkOut": "Check-out",
+      "guests": "Guests",
+      "guest": "guest",
+      "guestsPlural": "guests",
+      "nights": "Number of Nights",
+      "night": "night",
+      "nightsPlural": "nights",
+      "nightsCalculated": "Nights",
+      "cleaningFee": "Cleaning Fee",
+      "total": "Total",
+      "reserve": "Reserve Now",
+      "chargeNotice": "You won't be charged yet",
+      "dateError": "Check-out must be after check-in",
+      "minStayError": "Minimum stay is {minStay} nights",
+      "sameDay": "Same-day bookings are not allowed",
+      "realTimePrice": "Real-time pricing from Guesty",
+      "calculatingPrice": "Calculating...",
+      "calculatingPricing": "Calculating pricing...",
+      "checkingAvailability": "Checking availability...",
+      "datesUnavailable": "Dates Unavailable",
+      "datesUnavailableMessage": "The selected dates are not available for booking.",
+      "unavailable": "Unavailable",
+      "includesAllFees": "Includes all fees and taxes",
+      "notice": "Notice",
+      "nightsCount": "{count} Night",
+      "nightsCountPlural": "{count} Nights",
+      "resetDates": "Reset Dates",
+      "close": "Close",
+      "selectCheckIn": "Select check-in date",
+      "selectCheckOut": "Select check-out date"
+    }
+  }
+}

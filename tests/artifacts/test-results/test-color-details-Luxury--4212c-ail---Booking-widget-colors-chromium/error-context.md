@@ -1,0 +1,450 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e5]:
+        - link "Loftly Apartment GmbH" [ref=e6] [cursor=pointer]:
+          - /url: /en
+          - text: Loftly Apartment
+        - navigation "Main navigation" [ref=e7]:
+          - link "Home" [ref=e8] [cursor=pointer]:
+            - /url: /en
+          - link "Properties" [ref=e9] [cursor=pointer]:
+            - /url: /en/properties
+          - link "About" [ref=e10] [cursor=pointer]:
+            - /url: /en/about
+          - link "Contact" [ref=e11] [cursor=pointer]:
+            - /url: /en/contact
+          - link "FAQ" [ref=e12] [cursor=pointer]:
+            - /url: /en/faq
+        - generic [ref=e13]:
+          - button "Switch to German" [ref=e14] [cursor=pointer]:
+            - img [ref=e15]
+            - generic [ref=e18]: DE
+          - link "Book Now" [ref=e19] [cursor=pointer]:
+            - /url: /en/booking
+            - button "Book Now" [ref=e20]
+    - main [ref=e21]:
+      - generic [ref=e23]:
+        - generic [ref=e26]:
+          - heading "Kantstrasse Apartment" [level=1] [ref=e27]
+          - generic [ref=e28]:
+            - generic [ref=e29]:
+              - img [ref=e30]
+              - generic [ref=e33]: Kantstrasse 99, 10627 Berlin
+            - generic [ref=e34]:
+              - generic [ref=e35]:
+                - img [ref=e36]
+                - img [ref=e38]
+                - img [ref=e40]
+                - img [ref=e42]
+                - img [ref=e44]
+              - generic [ref=e46]: "4.9"
+              - generic [ref=e47]: (47 reviews)
+        - generic [ref=e49]:
+          - generic [ref=e53] [cursor=pointer]:
+            - img [ref=e54]
+            - generic [ref=e58]: 5 photos
+          - generic [ref=e59]:
+            - button [ref=e60] [cursor=pointer]
+            - button [ref=e62] [cursor=pointer]
+            - button [ref=e64] [cursor=pointer]
+            - button "+1" [ref=e66] [cursor=pointer]:
+              - generic [ref=e69]: "+1"
+        - generic [ref=e70]:
+          - generic [ref=e71]:
+            - generic [ref=e72]:
+              - generic [ref=e73]:
+                - generic [ref=e74]:
+                  - img [ref=e76]
+                  - generic [ref=e78]:
+                    - generic [ref=e79]: 90m²
+                    - generic [ref=e80]: Size
+                - generic [ref=e81]:
+                  - img [ref=e83]
+                  - generic [ref=e86]:
+                    - generic [ref=e87]: "2"
+                    - generic [ref=e88]: Bedrooms
+                - generic [ref=e89]:
+                  - img [ref=e91]
+                  - generic [ref=e97]:
+                    - generic [ref=e98]: "1"
+                    - generic [ref=e99]: Bathrooms
+                - generic [ref=e100]:
+                  - img [ref=e102]
+                  - generic [ref=e107]:
+                    - generic [ref=e108]: "5"
+                    - generic [ref=e109]: Max Guests
+              - generic [ref=e110]:
+                - generic [ref=e111]:
+                  - img [ref=e112]
+                  - generic [ref=e115]:
+                    - generic [ref=e116]: Check-in
+                    - generic [ref=e117]: 3:00 PM - 11:00 PM
+                - generic [ref=e118]:
+                  - img [ref=e119]
+                  - generic [ref=e122]:
+                    - generic [ref=e123]: Check-out
+                    - generic [ref=e124]: 11:00 AM
+            - generic [ref=e125]:
+              - heading "About This Property" [level=2] [ref=e126]
+              - heading "Spacious Business & Family Apartment in Charlottenburg" [level=3] [ref=e127]
+              - paragraph [ref=e128]: Welcome to our premium 90m² apartment in the heart of Charlottenburg, one of Berlin's most prestigious districts. Perfect for business travelers and families, this beautifully furnished apartment offers a dedicated workspace, high-speed WiFi, and all the comforts of home. Located near excellent restaurants, shopping, and public transportation.
+            - generic [ref=e129]:
+              - heading "Amenities" [level=2] [ref=e130]
+              - generic [ref=e131]:
+                - generic [ref=e132]:
+                  - img [ref=e134]
+                  - generic [ref=e138]: High-Speed WiFi (100 Mbps)
+                - generic [ref=e139]:
+                  - img [ref=e141]
+                  - generic [ref=e144]: Dedicated Workspace
+                - generic [ref=e145]:
+                  - img [ref=e147]
+                  - generic [ref=e150]: Fully Equipped Kitchen
+                - generic [ref=e151]:
+                  - img [ref=e153]
+                  - generic [ref=e156]: Washing Machine
+                - generic [ref=e157]:
+                  - img [ref=e159]
+                  - generic [ref=e162]: Smart TV
+                - generic [ref=e163]:
+                  - img [ref=e165]
+                  - generic [ref=e167]: Air Conditioning
+                - generic [ref=e168]:
+                  - img [ref=e170]
+                  - generic [ref=e172]: Heating
+                - generic [ref=e173]:
+                  - img [ref=e175]
+                  - generic [ref=e177]: Smoke Detector
+                - generic [ref=e178]:
+                  - img [ref=e180]
+                  - generic [ref=e182]: First Aid Kit
+                - generic [ref=e183]:
+                  - img [ref=e185]
+                  - generic [ref=e189]: Free Parking
+            - generic [ref=e190]:
+              - heading "Availability" [level=2] [ref=e191]
+              - generic [ref=e193]:
+                - img [ref=e194]
+                - generic [ref=e196]:
+                  - generic [ref=e197]: Calendar View Coming Soon
+                  - generic [ref=e198]: Contact us to check specific dates
+              - paragraph [ref=e200]: Minimum stay requirements apply. Contact us for availability and special rates.
+            - generic [ref=e201]:
+              - heading "Pricing" [level=2] [ref=e202]
+              - generic [ref=e203]:
+                - generic [ref=e204]: €120
+                - generic [ref=e205]: / per night
+              - generic [ref=e206]:
+                - generic [ref=e207]:
+                  - generic [ref=e208]:
+                    - img [ref=e209]
+                    - generic [ref=e211]: Cleaning Fee
+                  - generic [ref=e212]: €50
+                - generic [ref=e213]:
+                  - generic [ref=e214]:
+                    - img [ref=e215]
+                    - generic [ref=e217]: Minimum Stay
+                  - generic [ref=e218]: 3 nights
+              - generic [ref=e219]:
+                - heading "Discounts" [level=3] [ref=e220]
+                - generic [ref=e221]:
+                  - generic [ref=e222]: Weekly Stay (7+ nights)
+                  - generic [ref=e223]: 10%
+                - generic [ref=e224]:
+                  - generic [ref=e225]: Monthly Stay (28+ nights)
+                  - generic [ref=e226]: 20%
+              - paragraph [ref=e227]: All prices include 19% German VAT. Rates may vary during holidays.
+            - generic [ref=e228]:
+              - heading "Location" [level=2] [ref=e229]
+              - generic [ref=e233]:
+                - img [ref=e234]
+                - generic [ref=e237]:
+                  - generic [ref=e238]: Interactive Map
+                  - generic [ref=e239]: Kantstrasse 99, 10627 Berlin
+              - generic [ref=e240]:
+                - heading "Nearby Attractions" [level=3] [ref=e241]
+                - generic [ref=e242]:
+                  - generic [ref=e243]:
+                    - generic [ref=e244]:
+                      - img [ref=e245]
+                      - generic [ref=e248]: Charlottenburg Palace
+                    - generic [ref=e249]: 2 km
+                  - generic [ref=e250]:
+                    - generic [ref=e251]:
+                      - img [ref=e252]
+                      - generic [ref=e255]: Kurfürstendamm
+                    - generic [ref=e256]: 1 km
+                  - generic [ref=e257]:
+                    - generic [ref=e258]:
+                      - img [ref=e259]
+                      - generic [ref=e262]: Zoo Station
+                    - generic [ref=e263]: 1.5 km
+                  - generic [ref=e264]:
+                    - generic [ref=e265]:
+                      - img [ref=e266]
+                      - generic [ref=e269]: KaDeWe Department Store
+                    - generic [ref=e270]: 2.5 km
+                  - generic [ref=e271]:
+                    - generic [ref=e272]:
+                      - img [ref=e273]
+                      - generic [ref=e276]: Berlin Zoo
+                    - generic [ref=e277]: 2 km
+              - generic [ref=e278]:
+                - heading "Public Transportation" [level=3] [ref=e279]
+                - paragraph [ref=e280]: Excellent public transport connections. Bus and metro stops within walking distance. Easy access to all parts of Berlin.
+            - generic [ref=e281]:
+              - heading "House Rules" [level=2] [ref=e282]
+              - generic [ref=e283]:
+                - generic [ref=e284]:
+                  - img [ref=e286]
+                  - generic [ref=e289]:
+                    - generic [ref=e290]: Check-in
+                    - generic [ref=e291]: 3:00 PM - 11:00 PM
+                - generic [ref=e292]:
+                  - img [ref=e294]
+                  - generic [ref=e297]:
+                    - generic [ref=e298]: Check-out
+                    - generic [ref=e299]: 11:00 AM
+                - generic [ref=e300]:
+                  - img [ref=e302]
+                  - generic [ref=e305]:
+                    - generic [ref=e306]: Quiet Hours
+                    - generic [ref=e307]: 10:00 PM - 7:00 AM
+                - generic [ref=e308]:
+                  - img [ref=e310]
+                  - generic [ref=e313]:
+                    - generic [ref=e314]: Smoking
+                    - generic [ref=e315]: Not Allowed
+                - generic [ref=e316]:
+                  - img [ref=e318]
+                  - generic [ref=e321]:
+                    - generic [ref=e322]: Parties/Events
+                    - generic [ref=e323]: Not Allowed
+                - generic [ref=e324]:
+                  - img [ref=e326]
+                  - generic [ref=e331]:
+                    - generic [ref=e332]: Pets
+                    - generic [ref=e333]: Not Allowed
+              - paragraph [ref=e335]:
+                - generic [ref=e336]: "Maximum Guests:"
+                - text: 5 guests
+            - generic [ref=e337]:
+              - generic [ref=e338]:
+                - heading "Guest Reviews" [level=2] [ref=e339]
+                - generic [ref=e340]:
+                  - img [ref=e341]
+                  - generic [ref=e343]: "4.9"
+                  - generic [ref=e344]: (47 reviews)
+              - generic [ref=e345]:
+                - generic [ref=e347]:
+                  - generic [ref=e348]:
+                    - generic [ref=e349]:
+                      - img [ref=e351]
+                      - generic [ref=e354]:
+                        - generic [ref=e355]: Michael S.
+                        - generic [ref=e356]: Germany
+                    - generic [ref=e357]:
+                      - img [ref=e358]
+                      - img [ref=e360]
+                      - img [ref=e362]
+                      - img [ref=e364]
+                      - img [ref=e366]
+                  - paragraph [ref=e368]: Perfect location and spotlessly clean. The workspace was ideal for my business trip. High-speed internet worked flawlessly throughout my stay.
+                  - generic [ref=e369]: October 2024
+                - generic [ref=e371]:
+                  - generic [ref=e372]:
+                    - generic [ref=e373]:
+                      - img [ref=e375]
+                      - generic [ref=e378]:
+                        - generic [ref=e379]: Sarah L.
+                        - generic [ref=e380]: United Kingdom
+                    - generic [ref=e381]:
+                      - img [ref=e382]
+                      - img [ref=e384]
+                      - img [ref=e386]
+                      - img [ref=e388]
+                      - img [ref=e390]
+                  - paragraph [ref=e392]: Very comfortable for our family stay. Great kitchen and close to everything we needed. The apartment was well-equipped and the host was very responsive.
+                  - generic [ref=e393]: October 2024
+                - generic [ref=e395]:
+                  - generic [ref=e396]:
+                    - generic [ref=e397]:
+                      - img [ref=e399]
+                      - generic [ref=e402]:
+                        - generic [ref=e403]: Thomas K.
+                        - generic [ref=e404]: Netherlands
+                    - generic [ref=e405]:
+                      - img [ref=e406]
+                      - img [ref=e408]
+                      - img [ref=e410]
+                      - img [ref=e412]
+                      - img [ref=e414]
+                  - paragraph [ref=e416]: Excellent apartment in a prime location. Easy access to public transport and many restaurants nearby. Would definitely stay again!
+                  - generic [ref=e417]: September 2024
+              - button "Show More Reviews (44 more)" [ref=e419] [cursor=pointer]
+          - generic [ref=e420]:
+            - generic [ref=e424]:
+              - generic [ref=e425]:
+                - generic [ref=e426]:
+                  - generic [ref=e427]: €120
+                  - generic [ref=e428]: / per night
+                - paragraph [ref=e429]: Best rates guaranteed
+              - generic [ref=e430]:
+                - generic [ref=e431]:
+                  - generic [ref=e432]: Check-in
+                  - generic [ref=e433]:
+                    - textbox [ref=e434]:
+                      - /placeholder: Check-in
+                      - text: 2025-11-11
+                    - img [ref=e435]
+                - generic [ref=e437]:
+                  - generic [ref=e438]: Check-out
+                  - generic [ref=e439]:
+                    - textbox [ref=e440]:
+                      - /placeholder: Check-out
+                      - text: 2025-11-14
+                    - img [ref=e441]
+                - generic [ref=e444]:
+                  - generic [ref=e445]: Nights
+                  - generic [ref=e446]: 3 nights
+                - generic [ref=e447]:
+                  - generic [ref=e448]: Guests
+                  - generic [ref=e449]:
+                    - combobox [ref=e450]:
+                      - option "1 guest"
+                      - option "2 guests" [selected]
+                      - option "3 guests"
+                      - option "4 guests"
+                      - option "5 guests"
+                      - option "6 guests"
+                    - img [ref=e451]
+              - generic [ref=e456]:
+                - generic [ref=e457]:
+                  - generic [ref=e458]: €120 × 3 nights
+                  - generic [ref=e459]: €360
+                - generic [ref=e460]:
+                  - generic [ref=e461]: Cleaning Fee
+                  - generic [ref=e462]: €50
+                - generic [ref=e463]:
+                  - generic [ref=e464]: Total
+                  - generic [ref=e465]: €410
+              - link "Reserve Now" [ref=e466] [cursor=pointer]:
+                - /url: /booking?propertyId=kant&checkIn=2025-11-11&checkOut=2025-11-14&guests=2
+                - button "Reserve Now" [ref=e467]
+              - paragraph [ref=e468]: You won't be charged yet
+            - generic [ref=e472]:
+              - generic [ref=e473]:
+                - generic [ref=e475]: L
+                - heading "Loftly Apartment GmbH" [level=3] [ref=e476]
+                - paragraph [ref=e477]: Professional Property Management
+              - generic [ref=e478]:
+                - generic [ref=e479]: Response Time
+                - generic [ref=e480]: Within 1 hour
+              - generic [ref=e481]:
+                - generic [ref=e482]:
+                  - img [ref=e484]
+                  - generic [ref=e487]: 24/7 Support Available
+                - generic [ref=e488]:
+                  - img [ref=e490]
+                  - generic [ref=e492]: Licensed & Insured
+                - generic [ref=e493]:
+                  - img [ref=e495]
+                  - generic [ref=e497]: Professional Management
+              - link "Contact Host" [ref=e498] [cursor=pointer]:
+                - /url: /contact
+                - button "Contact Host" [ref=e499]
+    - contentinfo [ref=e500]:
+      - generic [ref=e501]:
+        - generic [ref=e502]:
+          - generic [ref=e503]:
+            - heading "Loftly Apartment GmbH" [level=3] [ref=e504]
+            - paragraph [ref=e505]: Premium Apartments in Berlin
+            - generic [ref=e506]:
+              - link "Facebook" [ref=e507] [cursor=pointer]:
+                - /url: https://facebook.com
+                - img [ref=e508]
+              - link "Instagram" [ref=e510] [cursor=pointer]:
+                - /url: https://instagram.com
+                - img [ref=e511]
+              - link "LinkedIn" [ref=e513] [cursor=pointer]:
+                - /url: https://linkedin.com
+                - img [ref=e514]
+          - generic [ref=e516]:
+            - heading "Quick Links" [level=4] [ref=e517]
+            - list [ref=e518]:
+              - listitem [ref=e519]:
+                - link "Properties" [ref=e520] [cursor=pointer]:
+                  - /url: /en/properties
+              - listitem [ref=e521]:
+                - link "About" [ref=e522] [cursor=pointer]:
+                  - /url: /en/about
+              - listitem [ref=e523]:
+                - link "FAQ" [ref=e524] [cursor=pointer]:
+                  - /url: /en/faq
+              - listitem [ref=e525]:
+                - link "Blog" [ref=e526] [cursor=pointer]:
+                  - /url: /en/blog
+              - listitem [ref=e527]:
+                - link "Contact" [ref=e528] [cursor=pointer]:
+                  - /url: /en/contact
+          - generic [ref=e529]:
+            - heading "Legal" [level=4] [ref=e530]
+            - list [ref=e531]:
+              - listitem [ref=e532]:
+                - link "Imprint" [ref=e533] [cursor=pointer]:
+                  - /url: /en/impressum
+              - listitem [ref=e534]:
+                - link "Privacy Policy" [ref=e535] [cursor=pointer]:
+                  - /url: /en/privacy
+              - listitem [ref=e536]:
+                - link "Terms & Conditions" [ref=e537] [cursor=pointer]:
+                  - /url: /en/terms
+              - listitem [ref=e538]:
+                - link "Cancellation Policy" [ref=e539] [cursor=pointer]:
+                  - /url: /en/cancellation
+              - listitem [ref=e540]:
+                - link "Cookie Policy" [ref=e541] [cursor=pointer]:
+                  - /url: /en/cookies
+          - generic [ref=e542]:
+            - heading "Contact" [level=4] [ref=e543]
+            - list [ref=e544]:
+              - listitem [ref=e545]:
+                - img [ref=e546]
+                - generic [ref=e549]:
+                  - text: Lübecker Straße 49
+                  - text: 10559 Berlin
+              - listitem [ref=e550]:
+                - link "info@loftlyapartment.de" [ref=e551] [cursor=pointer]:
+                  - /url: mailto:info@loftlyapartment.de
+                  - img [ref=e552]
+                  - generic [ref=e555]: info@loftlyapartment.de
+              - listitem [ref=e556]:
+                - link "+49 163 3595589" [ref=e557] [cursor=pointer]:
+                  - /url: tel:+491633595589
+                  - img [ref=e558]
+                  - generic [ref=e560]: +49 163 3595589
+              - listitem [ref=e561]: "Trade Register: HRB274913B"
+        - generic [ref=e563]:
+          - paragraph [ref=e564]: © 2025 Loftly Apartment GmbH. All rights reserved
+          - paragraph [ref=e565]: "Representatives: Kerim Ay, Fabian Streckfuß"
+  - button "Open Next.js Dev Tools" [ref=e571] [cursor=pointer]:
+    - img [ref=e572]
+  - alert [ref=e575]
+  - dialog "Cookie Settings" [ref=e576]:
+    - generic [ref=e581]:
+      - img [ref=e584]
+      - generic [ref=e591]:
+        - heading "Cookie Settings" [level=2] [ref=e592]
+        - paragraph [ref=e593]:
+          - text: We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic. By clicking 'Accept All', you consent to our use of cookies.
+          - link "Learn more" [ref=e594] [cursor=pointer]:
+            - /url: /cookie-policy
+      - generic [ref=e595]:
+        - button "Accept All" [ref=e596] [cursor=pointer]
+        - button "Reject Non-Essential" [ref=e597] [cursor=pointer]
+        - button "Customize" [ref=e598] [cursor=pointer]
+```

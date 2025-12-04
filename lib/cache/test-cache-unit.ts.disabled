@@ -1,0 +1,137 @@
+/**
+ * Unit test for availability cache (no API required)
+ * Run with: npx tsx lib/cache/test-cache-unit.ts
+ */
+
+import {
+  availabilityCache,
+  getCacheStatistics,
+  clearAvailabilityCache,
+  cleanupExpiredCache
+} from './availability-cache';
+
+function testCacheUnit() {
+  console.log('='.repeat(60));
+  console.log('Unit Testing Availability Cache');
+  console.log('='.repeat(60));
+  console.log();
+
+  const propertyId = 'test-property-123';
+  const startDate = '2025-01-01';
+  const endDate = '2025-01-07';
+
+  const mockAvailability = [
+    { date: '2025-01-01', status: 'available' as const, price: 100 },
+    { date: '2025-01-02', status: 'available' as const, price: 100 },
+    { date: '2025-01-03', status: 'available' as const, price: 120 },
+  ];
+
+  try {
+    // Test 1: Cache Miss
+    console.log('Test 1: Cache MISS (empty cache)');
+    console.log('-'.repeat(60));
+    const result1 = availabilityCache.get(propertyId, startDate, endDate);
+    console.log(`✓ Result: ${result1 === null ? 'null (expected)' : 'unexpected value'}`);
+    if (result1 !== null) throw new Error('Expected null for cache miss');
+    console.log();
+
+    // Test 2: Set Cache
+    console.log('Test 2: SET cache entry');
+    console.log('-'.repeat(60));
+    availabilityCache.set(propertyId, startDate, endDate, mockAvailability);
+    console.log('✓ Cache entry stored');
+    console.log();
+
+    // Test 3: Cache Hit
+    console.log('Test 3: Cache HIT');
+    console.log('-'.repeat(60));
+    const result2 = availabilityCache.get(propertyId, startDate, endDate);
+    console.log(`✓ Result: ${result2 ? 'Found' : 'null (unexpected)'}`);
+    console.log(`✓ Data length: ${result2?.length || 0} (expected: 3)`);
+    if (!result2 || result2.length !== 3) throw new Error('Expected cached data');
+    console.log();
+
+    // Test 4: Statistics
+    console.log('Test 4: Cache Statistics');
+    console.log('-'.repeat(60));
+    const stats1 = getCacheStatistics();
+    console.log(`Total Requests: ${stats1.totalRequests} (expected: 2)`);
+    console.log(`Cache Hits: ${stats1.hits} (expected: 1)`);
+    console.log(`Cache Misses: ${stats1.misses} (expected: 1)`);
+    console.log(`Hit Rate: ${stats1.hitRate}% (expected: 50%)`);
+    if (stats1.totalRequests !== 2 || stats1.hits !== 1 || stats1.misses !== 1) {
+      throw new Error('Unexpected statistics');
+    }
+    console.log();
+
+    // Test 5: Multiple Cache Entries
+    console.log('Test 5: Multiple cache entries');
+    console.log('-'.repeat(60));
+    availabilityCache.set(propertyId, '2025-02-01', '2025-02-07', mockAvailability);
+    availabilityCache.set('another-property', startDate, endDate, mockAvailability);
+    console.log(`✓ Cache size: ${availabilityCache.getSize()} (expected: 3)`);
+    console.log(`✓ Cache keys: ${availabilityCache.getKeys().length}`);
+    if (availabilityCache.getSize() !== 3) throw new Error('Expected 3 cache entries');
+    console.log();
+
+    // Test 6: Clear Specific Property
+    console.log('Test 6: Clear specific property cache');
+    console.log('-'.repeat(60));
+    clearAvailabilityCache(propertyId);
+    const sizeAfterClear = availabilityCache.getSize();
+    console.log(`✓ Cache size after clear: ${sizeAfterClear} (expected: 1)`);
+    if (sizeAfterClear !== 1) throw new Error('Expected 1 cache entry after clearing property');
+    console.log();
+
+    // Test 7: Clear All
+    console.log('Test 7: Clear all cache entries');
+    console.log('-'.repeat(60));
+    clearAvailabilityCache();
+    const sizeAfterClearAll = availabilityCache.getSize();
+    console.log(`✓ Cache size after clear all: ${sizeAfterClearAll} (expected: 0)`);
+    if (sizeAfterClearAll !== 0) throw new Error('Expected 0 cache entries after clearing all');
+    console.log();
+
+    // Test 8: TTL Expiry (simulated)
+    console.log('Test 8: TTL expiry simulation');
+    console.log('-'.repeat(60));
+    availabilityCache.set(propertyId, startDate, endDate, mockAvailability);
+    console.log('✓ Set cache entry');
+
+    // Wait a moment
+    setTimeout(() => {
+      const result = availabilityCache.get(propertyId, startDate, endDate);
+      console.log(`✓ Entry still valid: ${result !== null ? 'Yes' : 'No (expired)'}`);
+      if (!result) throw new Error('Entry should still be valid after short time');
+      console.log();
+
+      // Test 9: Cleanup
+      console.log('Test 9: Manual cleanup');
+      console.log('-'.repeat(60));
+      cleanupExpiredCache();
+      console.log('✓ Cleanup completed');
+      console.log();
+
+      // Final Statistics
+      console.log('Final Cache Statistics');
+      console.log('-'.repeat(60));
+      const finalStats = getCacheStatistics();
+      console.log(`Total Requests: ${finalStats.totalRequests}`);
+      console.log(`Cache Hits: ${finalStats.hits}`);
+      console.log(`Cache Misses: ${finalStats.misses}`);
+      console.log(`Hit Rate: ${finalStats.hitRate}%`);
+      console.log();
+
+      console.log('='.repeat(60));
+      console.log('✓ All unit tests passed!');
+      console.log('='.repeat(60));
+    }, 100);
+
+  } catch (error) {
+    console.error('❌ Unit test failed:', error);
+    process.exit(1);
+  }
+}
+
+// Run the test
+testCacheUnit();

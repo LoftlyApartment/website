@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-inter: 'Inter', system-ui, sans-serif;
+    --font-display: 'Playfair Display', serif;
+
+    /* Luxury Color Variables */
+    --background: #f1e1ca; /* luxury-cream-50 */
+    --foreground: #1a1a1a; /* luxury-obsidian-950 */
+    --surface: #fdf8f1; /* luxury-cream-100 */
+    --surface-elevated: #ffffff; /* White for elevated cards */
+    --border: #d6c9b4; /* luxury-beige-300 */
+    --border-hover: #a08970; /* luxury-beige-600 */
+    --text-primary: #1a1a1a; /* luxury-obsidian-950 */
+    --text-heading: #404040; /* luxury-charcoal-900 */
+    --text-body: #494949; /* luxury-charcoal-800 */
+    --text-secondary: #636363; /* luxury-charcoal-600 */
+    --accent-primary: #a08970; /* luxury-beige-600 */
+    --accent-gold: #f4c430; /* luxury-gold-600 */
+    --accent-gold-focus: #ffd43b; /* luxury-gold-500 */
+  }
+
+  * {
+    @apply border-luxury-beige-300;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-luxury-cream-50 text-luxury-obsidian-950 antialiased;
+    font-feature-settings: 'rlig' 1, 'calt' 1;
+  }
+}
+
+@layer components {
+  .container {
+    @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center rounded-lg px-4 py-2 text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50;
+  }
+
+  .btn-primary {
+    @apply btn bg-luxury-beige-600 text-white hover:bg-luxury-beige-700 focus-visible:ring-luxury-gold-500;
+  }
+
+  .btn-secondary {
+    @apply btn border border-luxury-beige-300 bg-white text-luxury-charcoal-900 hover:bg-luxury-cream-50 focus-visible:ring-luxury-beige-600;
+  }
+
+  .btn-gold {
+    @apply btn bg-luxury-gold-600 text-luxury-obsidian-950 hover:bg-luxury-gold-500 focus-visible:ring-luxury-gold-500;
+  }
+
+  .input {
+    @apply w-full rounded-lg border border-luxury-beige-300 bg-white px-4 py-2 text-sm text-luxury-charcoal-800 placeholder:text-luxury-charcoal-600 focus:border-luxury-beige-600 focus:outline-none focus:ring-2 focus:ring-luxury-gold-500/20;
+  }
+
+  .card {
+    @apply rounded-xl border border-luxury-beige-300 bg-white p-6 shadow-soft;
+  }
+
+  .card-surface {
+    @apply rounded-xl border border-luxury-beige-300 bg-luxury-cream-100 p-6 shadow-soft;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}

@@ -1,0 +1,334 @@
+/**
+ * Guestly API Client - Usage Examples
+ *
+ * This file demonstrates how to use the Guestly API client.
+ * These examples are for reference only - do not run in production!
+ */
+
+import {
+  getProperties,
+  getProperty,
+  getPropertyByKey,
+  getAvailability,
+  isPropertyAvailable,
+  createReservation,
+  updateReservation,
+  getReservations,
+  cancelReservation,
+  formatDateForApi,
+  isValidDateFormat,
+  PROPERTY_MAP,
+  type GuestlyProperty,
+  type GuestlyReservation,
+  type ReservationData
+} from './client';
+
+// ============================================================================
+// Example 1: Fetch All Properties
+// ============================================================================
+
+async function example1_FetchAllProperties() {
+  console.log('\n=== Example 1: Fetch All Properties ===\n');
+
+  try {
+    const properties = await getProperties();
+
+    console.log(`Found ${properties.length} properties:`);
+    properties.forEach((property: GuestlyProperty) => {
+      console.log(`\n- ${property.title}`);
+      console.log(`  ID: ${property._id}`);
+      console.log(`  Address: ${property.address?.full || 'N/A'}`);
+      console.log(`  Bedrooms: ${property.bedrooms || 0}`);
+      console.log(`  Max Guests: ${property.accommodates || 0}`);
+      console.log(`  Base Price: ${property.prices?.basePrice || 0} ${property.prices?.currency || 'EUR'}`);
+    });
+
+    return properties;
+  } catch (error) {
+    console.error('Error in example1:', error);
+    throw error;
+  }
+}
+
+// ============================================================================
+// Example 2: Get Property Details by Key
+// ============================================================================
+
+async function example2_GetPropertyByKey() {
+  console.log('\n=== Example 2: Get Property by Key ===\n');
+
+  try {
+    // Using friendly property keys from PROPERTY_MAP
+    console.log('Available property keys:', Object.keys(PROPERTY_MAP));
+
+    const property = await getPropertyByKey('kantstrasse');
+
+    console.log('\nKantstrasse Property Details:');
+    console.log(`Title: ${property.title}`);
+    console.log(`Address: ${property.address?.full}`);
+    console.log(`Bedrooms: ${property.bedrooms}`);
+    console.log(`Bathrooms: ${property.bathrooms}`);
+    console.log(`Max Guests: ${property.accommodates}`);
+    console.log(`Property Type: ${property.propertyType}`);
+    console.log(`Amenities: ${property.amenities?.join(', ') || 'None listed'}`);
+
+    return property;
+  } catch (error) {
+    console.error('Error in example2:', error);
+    throw error;
+  }
+}
+
+// ============================================================================
+// Example 3: Check Availability for Date Range
+// ============================================================================
+
+async function example3_CheckAvailability() {
+  console.log('\n=== Example 3: Check Availability ===\n');
+
+  try {
+    const propertyId = PROPERTY_MAP['kantstrasse'];
+    const startDate = '2025-12-01';
+    const endDate = '2025-12-07';
+
+    console.log(`Checking availability for Kantstrasse`);
+    console.log(`Date Range: ${startDate} to ${endDate}\n`);
+
+    // Get detailed availability
+    const availability = await getAvailability(propertyId, startDate, endDate);
+
+    console.log('Daily Availability:');
+    availability.forEach(day => {
+      console.log(`  ${day.date}: ${day.status} - ${day.price || 'N/A'} EUR`);
+    });
+
+    // Simple boolean check
+    const isAvailable = await isPropertyAvailable(propertyId, startDate, endDate);
+
+    console.log(`\nProperty is ${isAvailable ? '✓ AVAILABLE' : '✗ NOT AVAILABLE'} for these dates`);
+
+    return { availability, isAvailable };
+  } catch (error) {
+    console.error('Error in example3:', error);
+    throw error;
+  }
+}
+
+// ============================================================================
+// Example 4: Create a Reservation
+// ============================================================================
+
+async function example4_CreateReservation() {
+  console.log('\n=== Example 4: Create a Reservation ===\n');
+
+  try {
+    const reservationData: ReservationData = {
+      listingId: PROPERTY_MAP['kantstrasse'],
+      checkIn: '2025-12-01',
+      checkOut: '2025-12-07',
+      guestName: 'John Doe',
+      guestEmail: 'john.doe@example.com',
+      guestPhone: '+49 123 456789',
+      numberOfGuests: 2,
+      status: 'confirmed',
+      money: {
+        fareAccommodation: 1200.00,
+        currency: 'EUR'
+      },
+      notes: 'Guest requested late check-in after 8pm',
+      source: 'Website Direct Booking'
+    };
+
+    console.log('Creating reservation with data:');
+    console.log(JSON.stringify(reservationData, null, 2));
+
+    const reservation = await createReservation(reservationData);
+
+    console.log('\n✓ Reservation created successfully!');
+    console.log(`Reservation ID: ${reservation._id}`);
+    console.log(`Confirmation Code: ${reservation.confirmationCode || 'N/A'}`);
+    console.log(`Status: ${reservation.status}`);
+    console.log(`Check-in: ${reservation.checkIn}`);
+    console.log(`Check-out: ${reservation.checkOut}`);
+    console.log(`Guest: ${reservation.guestName}`);
+
+    return reservation;
+  } catch (error) {
+    console.error('Error in example4:', error);
+    throw error;
+  }
+}
+
+// ============================================================================
+// Example 5: Update a Reservation
+// ============================================================================
+
+async function example5_UpdateReservation(reservationId: string) {
+  console.log('\n=== Example 5: Update a Reservation ===\n');
+
+  try {
+    console.log(`Updating reservation: ${reservationId}`);
+
+    const updates = {
+      numberOfGuests: 3,
+      notes: 'Updated: Guest bringing one additional person'
+    };
+
+    console.log('Update data:', JSON.stringify(updates, null, 2));
+
+    const updatedReservation = await updateReservation(reservationId, updates);
+
+    console.log('\n✓ Reservation updated successfully!');
+    console.log(`Number of Guests: ${updatedReservation.numberOfGuests}`);
+    console.log(`Notes: ${updatedReservation.notes}`);
+
+    return updatedReservation;
+  } catch (error) {
+    console.error('Error in example5:', error);
+    throw error;
+  }
+}
+
+// ============================================================================
+// Example 6: Fetch Reservations with Filters
+// ============================================================================
+
+async function example6_FetchReservations() {
+  console.log('\n=== Example 6: Fetch Reservations ===\n');
+
+  try {
+    // Fetch upcoming reservations for Kantstrasse
+    const propertyId = PROPERTY_MAP['kantstrasse'];
+    const today = formatDateForApi(new Date());
+    const futureDate = formatDateForApi(
+      new Date(Date.now() + 90 * 24 * 60 * 60 * 1000) // 90 days from now
+    );
+
+    console.log(`Fetching reservations for Kantstrasse`);
+    console.log(`Date Range: ${today} to ${futureDate}\n`);
+
+    const reservations = await getReservations(propertyId, today, futureDate);
+
+    console.log(`Found ${reservations.length} upcoming reservations:`);
+
+    reservations.forEach((res: GuestlyReservation) => {
+      console.log(`\n- Reservation ${res._id}`);
+      console.log(`  Guest: ${res.guestName || 'N/A'}`);
+      console.log(`  Check-in: ${res.checkIn}`);
+      console.log(`  Check-out: ${res.checkOut}`);
+      console.log(`  Status: ${res.status}`);
+      console.log(`  Guests: ${res.numberOfGuests || 0}`);
+      console.log(`  Total: ${res.money?.totalPaid || res.money?.fareAccommodation || 0} ${res.money?.currency || 'EUR'}`);
+    });
+
+    return reservations;
+  } catch (error) {
+    console.error('Error in example6:', error);
+    throw error;
+  }
+}
+
+// ============================================================================
+// Example 7: Cancel a Reservation
+// ============================================================================
+
+async function example7_CancelReservation(reservationId: string) {
+  console.log('\n=== Example 7: Cancel a Reservation ===\n');
+
+  try {
+    console.log(`Canceling reservation: ${reservationId}`);
+
+    const canceledReservation = await cancelReservation(reservationId);
+
+    console.log('\n✓ Reservation canceled successfully!');
+    console.log(`Status: ${canceledReservation.status}`); // Should be 'canceled'
+    console.log(`Guest: ${canceledReservation.guestName}`);
+    console.log(`Check-in: ${canceledReservation.checkIn}`);
+    console.log(`Check-out: ${canceledReservation.checkOut}`);
+
+    return canceledReservation;
+  } catch (error) {
+    console.error('Error in example7:', error);
+    throw error;
+  }
+}
+
+// ============================================================================
+// Example 8: Date Utilities
+// ============================================================================
+
+async function example8_DateUtilities() {
+  console.log('\n=== Example 8: Date Utilities ===\n');
+
+  // Validate date formats
+  const validDates = ['2025-12-01', '2025-01-15', '2024-06-30'];
+  const invalidDates = ['12/01/2025', '2025/12/01', '01-12-2025'];
+
+  console.log('Valid Date Formats:');
+  validDates.forEach(date => {
+    console.log(`  ${date}: ${isValidDateFormat(date) ? '✓' : '✗'}`);
+  });
+
+  console.log('\nInvalid Date Formats:');
+  invalidDates.forEach(date => {
+    console.log(`  ${date}: ${isValidDateFormat(date) ? '✓' : '✗'}`);
+  });
+
+  // Format dates
+  const today = new Date();
+  const tomorrow = new Date(Date.now() + 24 * 60 * 60 * 1000);
+  const nextWeek = new Date(Date.now() + 7 * 24 * 60 * 60 * 1000);
+
+  console.log('\nFormatted Dates:');
+  console.log(`  Today: ${formatDateForApi(today)}`);
+  console.log(`  Tomorrow: ${formatDateForApi(tomorrow)}`);
+  console.log(`  Next Week: ${formatDateForApi(nextWeek)}`);
+}
+
+// ============================================================================
+// Run All Examples
+// ============================================================================
+
+async function runAllExamples() {
+  console.log('╔════════════════════════════════════════════════════╗');
+  console.log('║   Guestly API Client - Usage Examples             ║');
+  console.log('╚════════════════════════════════════════════════════╝');
+
+  try {
+    // Run examples sequentially
+    await example1_FetchAllProperties();
+    await example2_GetPropertyByKey();
+    await example3_CheckAvailability();
+    await example8_DateUtilities();
+
+    // Note: Examples 4, 5, 6, 7 require actual reservations
+    // Uncomment these when testing with real data:
+    // const newReservation = await example4_CreateReservation();
+    // await example5_UpdateReservation(newReservation._id);
+    // await example6_FetchReservations();
+    // await example7_CancelReservation(newReservation._id);
+
+    console.log('\n╔════════════════════════════════════════════════════╗');
+    console.log('║   All examples completed successfully! ✓          ║');
+    console.log('╚════════════════════════════════════════════════════╝\n');
+  } catch (error) {
+    console.error('\n❌ Examples failed with error:', error);
+    throw error;
+  }
+}
+
+// Export examples for individual testing
+export {
+  example1_FetchAllProperties,
+  example2_GetPropertyByKey,
+  example3_CheckAvailability,
+  example4_CreateReservation,
+  example5_UpdateReservation,
+  example6_FetchReservations,
+  example7_CancelReservation,
+  example8_DateUtilities,
+  runAllExamples
+};
+
+// Uncomment to run examples when executing this file directly
+// runAllExamples().catch(console.error);
